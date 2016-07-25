@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+div{width:200px; height:20px; background:red; border-radius:20px;}
+
+</style>
+<script>
+	window.onload=function(){
+		var  oInp1=document.querySelector('#c1');
+		var  oInp2=document.querySelector('#c2');
+		oInp2.onchange=function(){
+			alert(this.value);	
+		};
+		oInp1.onchange=function(){
+			alert(this.value);	
+		};
+			
+	};
+</script>
+</head>
+
+<body>
+	<input type="color" id="c1" value="#00ff00"/>
+    <input type="color" id="c2" value="#ffff80"/>
+    <div></div>
+</body>
+</html>
